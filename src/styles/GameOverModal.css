@@ -1,0 +1,17 @@
+.game-over-modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+button {
+  padding: 0.2rem;
+}
+
+.options {
+  display: flex;
+  gap: 1rem;
+}

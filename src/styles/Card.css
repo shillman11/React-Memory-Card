@@ -1,0 +1,15 @@
+.card-button {
+  width: 150px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: rgba(255, 255, 255);
+  background-size: cover;
+}
+
+.card-image {
+  height: 100px;
+}
