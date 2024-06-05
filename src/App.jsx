@@ -7,6 +7,10 @@ import Scoreboard from "./components/Scoreboard.jsx";
 import { v4 as uuid } from "uuid";
 import GameOverModal from "./components/GameOverModal.jsx";
 import Modal from "./components/Modal.jsx";
+import CLICKSOUND from "./assets/pokemon-a-button.mp3";
+import WINSOUND from "./assets/victory.mp3";
+import LOSESOUND from "./assets/lose.mp3";
+import LEVELUPSOUND from "./assets/levelup.mp3";
 
 function App() {
   const {
@@ -25,12 +29,12 @@ function App() {
   const [gameStatus, setGameStatus] = useState("playing");
   const [numberOfCards, setNumberOfCards] = useState(5);
 
-  const clickAudio = new Audio("../src/assets/src_assets_pokemon-a-button.mp3");
+  const clickAudio = new Audio(CLICKSOUND);
   clickAudio.volume = 0.3;
-  const winAudio = new Audio("../src/assets/src_assets_victory.mp3");
+  const winAudio = new Audio(WINSOUND);
   winAudio.volume = 0.5;
-  const loseAudio = new Audio("../src/assets/lose.mp3");
-  const continueAudio = new Audio("../src/assets/src_assets_levelup.mp3");
+  const loseAudio = new Audio(LOSESOUND);
+  const continueAudio = new Audio(LEVELUPSOUND);
   continueAudio.volume = 0.5;
 
   useEffect(() => {
